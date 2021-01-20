@@ -76,7 +76,7 @@ CREATE TABLE Clinics
   PRIMARY KEY (Address, City)
 );
 
-CREATE TABLE Vacination_Facilities
+CREATE TABLE Vaccination_Facilities
 (
   Avaiable_Vaccines INT NOT NULL,
   Address VARCHAR(50) NOT NULL,
@@ -165,9 +165,9 @@ CREATE TABLE Vaccination_Details
   Visit_Date DATE NOT NULL,
   Eligibility BIT NOT NULL,
   PESEL VARCHAR(11) NOT NULL,
-  Vacination_Facility_Address VARCHAR(50) NOT NULL,
-  Vacination_Facility_City VARCHAR(30) NOT NULL,
+  Vaccination_Facility_Address VARCHAR(50) NOT NULL,
+  Vaccination_Facility_City VARCHAR(30) NOT NULL,
   PRIMARY KEY (PESEL),
   FOREIGN KEY (PESEL) REFERENCES People(PESEL),
-  FOREIGN KEY (Vacination_Facility_Address, Vacination_Facility_City) REFERENCES Vacination_Facilities(Address, City)
+  FOREIGN KEY (Vaccination_Facility_Address, Vaccination_Facility_City) REFERENCES Vaccination_Facilities(Address, City)
 );
