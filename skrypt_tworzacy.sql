@@ -162,7 +162,7 @@ CREATE TABLE Quarantine_Details
 CREATE TABLE Vaccination_Details
 (
   Series INT NOT NULL,
-  Visit_Date DATE NOT NULL,
+  Visit_Date DATE,
   Eligibility BIT NOT NULL,
   PESEL VARCHAR(11) NOT NULL,
   Vaccination_Facility_Address VARCHAR(50) NOT NULL,
