@@ -78,7 +78,7 @@ CREATE TABLE Clinics
 
 CREATE TABLE Vaccination_Facilities
 (
-  Avaiable_Vaccines INT NOT NULL,
+  Available_Vaccines INT NOT NULL,
   Address VARCHAR(50) NOT NULL,
   City VARCHAR(30) NOT NULL,
   Name VARCHAR(50) NOT NULL,
