@@ -1,8 +1,7 @@
 USE COVID19;
 GO
 
-IF OBJECT_ID('Patients_in_Hospital') IS NOT NULL
-	DROP VIEW Patients_in_Hospital;
+DROP VIEW IF EXISTS [dbo].[Patients_in_Hospital]; Dzia³a w SLQS2016 wzywy¿
 GO
 
 CREATE VIEW [Patients_in_Hospital] AS
