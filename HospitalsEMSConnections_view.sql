@@ -1,7 +1,7 @@
 USE COVID19;
 GO
 
-DROP VIEW IF EXISTS [dbo].[Hospital_EMS_Connections]; Dzia³a w SLQS2016 wzywy¿
+DROP VIEW IF EXISTS [dbo].[Hospital_EMS_Connections];
 GO
 
 CREATE VIEW [Hospital_EMS_Connections] 

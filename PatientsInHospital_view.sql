@@ -1,7 +1,7 @@
 USE COVID19;
 GO
 
-DROP VIEW IF EXISTS [dbo].[Patients_in_Hospital]; Dzia³a w SLQS2016 wzywy¿
+DROP VIEW IF EXISTS [dbo].[Patients_in_Hospital];
 GO
 
 CREATE VIEW [Patients_in_Hospital] AS
