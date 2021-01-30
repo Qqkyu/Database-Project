@@ -1,7 +1,6 @@
--- DROP TRIGGER [IF EXISTS] dbo.MakeBedAvailable;
-IF OBJECT_ID ('MakeBedAvailable', 'TR') IS NOT NULL  
-   DROP TRIGGER dbo.MakeBedAvailable;
-GO;       
+DROP TRIGGER IF EXISTS dbo.MakeBedAvailable;
+GO;
+
 CREATE TRIGGER dbo.MakeBedAvailable
 ON Hospitalized_Patients
 AFTER DELETE
