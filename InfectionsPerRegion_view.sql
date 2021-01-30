@@ -1,11 +1,7 @@
-USE COVID19;
+DROP VIEW IF EXISTS dbo.Infections_Per_Region;
 GO
 
-DROP VIEW IF EXISTS [dbo].[INFECTIONS_PER_REGION];
-GO
-
-CREATE VIEW [INFECTIONS_PER_REGION] AS
+CREATE VIEW Infections_Per_Region AS
 	SELECT DISTINCT P.Region, (SELECT DISTINCT COUNT(T.PESEL) FROM Tests T 
-								GROUP BY T.Result HAVING T.Result='Positive') Infections FROM People P
-;
+		GROUP BY T.Result HAVING T.Result='Positive') Infections FROM People P;
 GO
