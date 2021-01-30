@@ -1,7 +1,6 @@
--- DROP TRIGGER [IF EXISTS] dbo.AutoQuarantine;
-IF OBJECT_ID ('dbo.AutoQuarantine', 'TR') IS NOT NULL  
-   DROP TRIGGER dbo.AutoQuarantine;
-GO;   
+DROP TRIGGER IF EXISTS dbo.AutoQuarantine;
+GO;
+
 CREATE TRIGGER dbo.AutoQuarantine
 ON Tests
 AFTER INSERT
