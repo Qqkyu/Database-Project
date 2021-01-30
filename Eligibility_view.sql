@@ -1,10 +1,7 @@
-USE COVID19;
+DROP VIEW IF EXISTS dbo.Eligibility;
 GO
 
-DROP VIEW IF EXISTS [dbo].[ELIGIBILITY];
-GO
-
-CREATE VIEW [ELIGIBILITY] AS
-	SELECT Name,Surname,V.Eligibility From People P
-	INNER JOIN Vaccination_Details V ON V.PESEL=P.PESEL;
+CREATE VIEW Eligibility AS
+	SELECT Name, Surname, V.Eligibility From People P
+	INNER JOIN Vaccination_Details V ON V.PESEL = P.PESEL;
 GO
