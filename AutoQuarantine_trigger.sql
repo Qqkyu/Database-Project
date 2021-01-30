@@ -1,4 +1,4 @@
--- DROP TRIGGER [IF EXISTS] dbo.AutoGeneratePatientsCard;
+-- DROP TRIGGER [IF EXISTS] dbo.AutoQuarantine;
 IF OBJECT_ID ('dbo.AutoQuarantine', 'TR') IS NOT NULL  
    DROP TRIGGER dbo.AutoQuarantine;
 GO;   
