@@ -5,9 +5,7 @@ GO
 
 CREATE PROC dbo.AddPatient
 
-@PESEL VARCHAR(11),
-@FACILITY_NAME VARCHAR(50),
-@City VARCHAR(30)
+@PESEL VARCHAR(11)
 
 AS
 INSERT INTO dbo.Hospitalized_Patients(PESEL,Facility_Name,City)
