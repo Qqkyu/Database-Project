@@ -6,5 +6,5 @@ ON Hospitalized_Patients
 AFTER INSERT
 AS
 BEGIN
-	EXEC dbo.AddPatientCard
+	EXEC dbo.AddPatientCard @PESEL = inserted.PESEL
 END
