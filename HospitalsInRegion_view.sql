@@ -1,10 +1,6 @@
-USE COVID19;
+DROP VIEW IF EXISTS dbo.HospitalsInRegion;
 GO
 
-DROP VIEW IF EXISTS [dbo].[HospitalsInRegion];
-GO
-
-CREATE VIEW [HospitalsInRegion] AS
-	SELECT * FROM Hospitals H ORDER BY Region DESC
-;
+CREATE VIEW HospitalsInRegion AS
+	SELECT * FROM Hospitals H ORDER BY Region DESC;
 GO
