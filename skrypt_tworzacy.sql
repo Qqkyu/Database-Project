@@ -138,7 +138,7 @@ CREATE TABLE Tests
   FOREIGN KEY (PESEL) REFERENCES People(PESEL)
 );
 
-CREATE TABLE Patients_Card
+CREATE TABLE Patient_Card
 (
   Chronic_Diseases VARCHAR(100) NOT NULL,
   Blood_Type VARCHAR(10) NOT NULL,
