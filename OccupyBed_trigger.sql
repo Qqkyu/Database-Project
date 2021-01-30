@@ -1,7 +1,6 @@
--- DROP TRIGGER [IF EXISTS] dbo.OccupyBed;
-IF OBJECT_ID ('OccupyBed', 'TR') IS NOT NULL  
-   DROP TRIGGER dbo.OccupyBed;
-GO;       
+DROP TRIGGER IF EXISTS dbo.OccupyBed;
+GO;
+
 CREATE TRIGGER dbo.OccupyBed
 ON Hospitalized_Patients
 AFTER INSERT
