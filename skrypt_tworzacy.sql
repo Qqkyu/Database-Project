@@ -49,8 +49,8 @@ CREATE TABLE EMS_Hospitals
 
 CREATE TABLE EMS_Details
 (
-  Avaiable_Ambulances INT NOT NULL,
-  Avaiable_Helicopters INT NOT NULL,
+  Available_Ambulances INT NOT NULL,
+  Available_Helicopters INT NOT NULL,
   Address VARCHAR(50) NOT NULL,
   City VARCHAR(30) NOT NULL,
   PRIMARY KEY (Address, City),
