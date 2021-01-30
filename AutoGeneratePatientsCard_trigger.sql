@@ -1,6 +1,5 @@
--- DROP TRIGGER [IF EXISTS] dbo.AutoGeneratePatientsCard;
-IF OBJECT_ID ('AutoGeneratePatientsCard', 'TR') IS NOT NULL  
-   DROP TRIGGER dbo.AutoGeneratePatientsCard;
+DROP TRIGGER IF EXISTS dbo.AutoGeneratePatientsCard;
+
 GO;       
 CREATE TRIGGER dbo.AutoGeneratePatientsCard
 ON Hospitalized_Patients
