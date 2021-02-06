@@ -1,0 +1,5 @@
+CREATE PROCEDURE BackupDatabase
+AS
+BACKUP DATABASE TestDB
+TO DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\Backup\TestDB.bak'
+GO
