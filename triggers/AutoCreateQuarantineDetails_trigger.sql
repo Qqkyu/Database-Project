@@ -4,6 +4,6 @@ AFTER INSERT
 AS
 BEGIN
 	INSERT INTO Quarantine_Details
-	SELECT GETDATE(), QP.PESEL , CAST(DATEADD(week,2,GETDATE())as DATE),P.Address , P.Clinic_City FROM inserted QP
+	SELECT GETDATE(), DATEADD(week,2,GETDATE()),P.Address , P.Clinic_City,QP.PESEL FROM inserted QP
 	JOIN People P ON QP.PESEL=P.PESEL
 END
