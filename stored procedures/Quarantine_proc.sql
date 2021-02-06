@@ -18,7 +18,4 @@ AS
 INSERT Quarantined_People(PESEL, Sanepid_Station_Address, Sanepid_Station_City)
 VALUES(@PESEL, @Sanepid_Station_Address, @Sanepid_Station_City)
 
-INSERT Quarantine_Details(Start_Date, End_Date, Address, City, PESEL)
-VALUES(@Start_Date, @End_Date, @Address, @City, @PESEL)
-
 GO
